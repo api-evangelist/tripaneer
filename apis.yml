@@ -1,7 +1,31 @@
 aid: tripaneer
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tripaneer.png
 name: tripaneer
-description: tripaneer is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  tripaneer is an Amsterdam-based online travel company that operates a family
+  of themed wellness and activity travel marketplaces, connecting travelers with
+  the organizers of retreats, courses, and holidays around the world. Its brands
+  include BookYogaRetreats.com, BookSurfCamps.com, BookMeditationRetreats.com,
+  BookAdventureRetreats.com, BookFitnessHolidays.com, BookMartialArtsHolidays.com,
+  and BookSailingHolidays.com, among others. Each site lets travelers discover,
+  compare, and book multi-day experiences by theme, destination, price, and date,
+  while giving retreat and course organizers a channel to list and sell their
+  offerings. tripaneer was surfaced as a portfolio company of Point Nine and
+  added to the API Evangelist network. As of this enrichment pass the company
+  publishes a consumer travel marketplace (sitemaps for listings, organizers, and
+  a blog) but exposes no public developer API, OpenAPI, OAuth/OIDC discovery, or
+  developer-portal surface that could be found or probed.
 url: https://raw.githubusercontent.com/api-evangelist/tripaneer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Travel
+- Marketplace
+- Wellness
+- Retreats
+- Booking
+- Tourism
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tripaneer-domain-security.yml
 - type: Website
   url: https://www.tripaneer.com
+- type: Blog
+  url: https://www.tripaneer.com/blog
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
